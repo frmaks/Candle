@@ -23,6 +23,7 @@ Downloads:
 ----------
 * Windows: [candle_1.0.6.zip](https://github.com/Denvi/Candle/releases/download/v1.0/Candle_1.0.6.zip)
 * Linux: [candle_1.0.6.tar.gz](https://github.com/Denvi/Candle/releases/download/v1.0/Candle_1.0.6.tar.gz)
+*  Linux AppImage version 1.1.8 (https://github.com/frmaks/Candle/releases/tag/untagged-63c3e329c9f127bc6e89)
 
 Build requirements:
 ------------------
