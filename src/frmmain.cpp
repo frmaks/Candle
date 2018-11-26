@@ -20,6 +20,7 @@
 #define PROGRESSSTEP     1000
 
 #include <QFileDialog>
+#include <QStandardPaths>
 #include <QTextStream>
 #include <QDebug>
 #include <QStringList>
@@ -85,7 +86,7 @@ frmMain::frmMain(QWidget *parent) :
                        << "black";
 
     // Loading settings
-    m_settingsFileName = qApp->applicationDirPath() + "/settings.ini";
+    m_settingsFileName = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/settings.ini";
     preloadSettings();
 
     m_settings = new frmSettings(this);
