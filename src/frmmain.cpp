@@ -18,6 +18,7 @@
 #define PROGRESSSTEP     1000
 
 #include <QFileDialog>
+#include <QStandardPaths>
 #include <QTextStream>
 #include <QDebug>
 #include <QStringList>
@@ -43,7 +44,7 @@ frmMain::frmMain(QWidget *parent) :
     m_statusForeColors << "white" << "palette(text)" << "white" << "black" << "black" << "black" << "black" << "palette(text)" << "white";
 
     // Loading settings
-    m_settingsFileName = qApp->applicationDirPath() + "/settings.ini";
+    m_settingsFileName = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/settings.ini";
     preloadSettings();
 
     m_settings = new frmSettings(this);
